@@ -163,6 +163,38 @@ export default function Home() {
           ))}
         </motion.div>
       </section>
+      {/* Founders Preview Section */}
+<section className="bg-brand-white py-24 border-t border-brand-grey/10">
+  <div className="max-w-7xl mx-auto px-8">
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+      <div className="relative h-[500px] md:h-[700px]">
+        <Image 
+          src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7" 
+          alt="The Founders" 
+          fill 
+          className="object-cover border-[15px] border-brand-black"
+        />
+        <div className="absolute -bottom-10 -right-10 bg-brand-yellow p-10 hidden md:block">
+          <p className="text-brand-black font-black text-4xl uppercase italic leading-none">
+            Founded <br /> By Visionaries
+          </p>
+        </div>
+      </div>
+      
+      <div className="space-y-8">
+        <h2 className="text-5xl font-black text-brand-black uppercase tracking-tighter">
+          MEET THE <span className="text-brand-red">FOUNDERS</span>
+        </h2>
+        <p className="text-brand-grey text-lg leading-relaxed">
+          Led by **Sahil Dorge**, the Golden Dragon team brings together expertise in culinary arts, operations, and technology. Alongside partners **Tanmay Dorge**, **Shubham Pingale**, and **Darshan Kshetri**, we are committed to serving more than just food—we serve Pune's heritage.
+        </p>
+        <button className="bg-brand-black text-brand-white px-10 py-4 font-black text-[10px] tracking-[0.3em] uppercase hover:bg-brand-red transition-all">
+          LEARN OUR STORY
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
 
       <Footer />
 
