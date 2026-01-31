@@ -17,13 +17,13 @@ export default function AboutPage() {
       name: "Tanmay Dorge",
       role: "Operations Partner",
       desc: "Ensuring every guest experiences excellence, Tanmay manages the intricate balance of traditional service and modern efficiency.",
-      image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e"
+      image: "/TanmayImg.png"
     },
     {
       name: "Shubham Pingale",
       role: "Culinary Strategist",
       desc: "With an eye for detail, Shubham bridges the gap between heritage recipes and contemporary culinary trends.",
-      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e"
+      image: "/Shubham.png"
     },
     {
       name: "Darshan Kshetri",
