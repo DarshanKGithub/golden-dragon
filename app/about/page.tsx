@@ -89,42 +89,55 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Leadership Section */}
-      <section className="py-24 px-8 bg-brand-black border-t border-brand-yellow/20">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-20">
-             <h2 className="text-brand-yellow text-4xl md:text-6xl font-black uppercase italic tracking-tighter">
-              The Minds Behind the <span className="text-brand-red">Dragon</span>
-            </h2>
-          </div>
+    {/* Leadership Section */}
+<section className="py-24 px-8 bg-brand-black border-t border-brand-yellow/20">
+  <div className="max-w-7xl mx-auto">
+    <div className="text-center mb-20">
+       <h2 className="text-brand-yellow text-4xl md:text-6xl font-black uppercase italic tracking-tighter">
+        The Minds Behind the <span className="text-brand-red">Dragon</span>
+      </h2>
+    </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
-            {team.map((member, index) => (
-              <motion.div
-                key={member.name}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ delay: index * 0.1 }}
-                viewport={{ once: true }}
-                className="group"
-              >
-                <div className="relative h-[450px] mb-6 overflow-hidden border border-brand-grey/30 group-hover:border-brand-yellow transition-all duration-500">
-                  <Image 
-                    src={member.image} 
-                    alt={member.name} 
-                    fill 
-                    className="object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-brand-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                </div>
-                <h3 className="text-brand-yellow font-black uppercase tracking-widest text-xl">{member.name}</h3>
-                <p className="text-brand-red text-[10px] font-bold uppercase tracking-[0.3em] mb-4">{member.role}</p>
-                <p className="text-brand-grey text-sm leading-relaxed font-light">{member.desc}</p>
-              </motion.div>
-            ))}
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+      {team.map((member, index) => (
+        <motion.div
+          key={member.name}
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ delay: index * 0.1 }}
+          viewport={{ once: true }}
+          className="group"
+        >
+          <div className="relative h-[450px] mb-6 overflow-hidden border border-brand-grey/30 group-hover:border-brand-yellow transition-all duration-500">
+            <Image 
+              src={member.image} 
+              alt={member.name} 
+              fill 
+              className="object-cover 
+                         grayscale-0         /* Full color on mobile by default */
+                         md:grayscale        /* Grayscale only on tablet/desktop */
+                         md:group-hover:grayscale-0 
+                         md:group-hover:scale-105 
+                         transition-all duration-700"
+            />
+            {/* Gradient overlay only appears on desktop hover to keep mobile view clean */}
+            <div className="absolute inset-0 bg-gradient-to-t from-brand-black/80 via-transparent to-transparent opacity-0 md:group-hover:opacity-100 transition-opacity duration-500" />
           </div>
-        </div>
-      </section>
+          
+          <h3 className="text-brand-yellow font-black uppercase tracking-widest text-xl">
+            {member.name}
+          </h3>
+          <p className="text-brand-red text-[10px] font-bold uppercase tracking-[0.3em] mb-4">
+            {member.role}
+          </p>
+          <p className="text-brand-grey text-sm leading-relaxed font-light">
+            {member.desc}
+          </p>
+        </motion.div>
+      ))}
+    </div>
+  </div>
+</section>
       
       <Footer />
     </main>
