@@ -1,0 +1,27 @@
+{
+  "Non-Veg": {
+    "Soup": [
+      { "id": 1, "name": "Manchaw Soup", "price": "100", "desc": "Spicy brown soup with crunchy noodles.", "image": "https://images.unsplash.com/photo-1547592166-23ac45744acd" },
+      { "id": 2, "name": "Noodles Soup", "price": "120", "desc": "Clear broth with chicken and silky noodles.", "image": "https://images.unsplash.com/photo-1569718212165-3a8278d5f624" }
+    ],
+    "Starters": [
+      { "id": 3, "name": "Chicken Lollipop Fry", "half": "110", "full": "160", "desc": "Crispy deep-fried wings with Schezwan dip.", "image": "https://images.unsplash.com/photo-1598515214211-89d3c73ae83b" },
+      { "id": 4, "name": "Chicken Chilli", "half": "140", "full": "180", "desc": "Chicken tossed with peppers and green chilies.", "image": "https://images.unsplash.com/photo-1525755662778-989d0524087e" }
+    ],
+    "Combos": [
+      { "id": 5, "name": "Chicken Schezwan Rice + Lollipop", "price": "180", "desc": "Half Rice served with 3 pieces of Lollipop.", "image": "https://images.unsplash.com/photo-1603133872878-684f208fb84b" },
+      { "id": 6, "name": "Chicken Triple Noodles + Lollipop", "price": "200", "desc": "Half Triple Noodles with 3 pieces of Lollipop.", "image": "https://images.unsplash.com/photo-1585032226651-759b368d7246" }
+    ]
+  },
+  "Veg": {
+    "Soup": [
+      { "id": 7, "name": "Manchaw Soup", "price": "90", "desc": "Vegetable brown soup with soy and ginger.", "image": "https://images.unsplash.com/photo-1547592166-23ac45744acd" }
+    ],
+    "Starters": [
+      { "id": 8, "name": "Paneer Chilli", "half": "140", "full": "180", "desc": "Cottage cheese cubes in a spicy soy-chili glaze.", "image": "https://images.unsplash.com/photo-1631452180519-c014fe946bc7" }
+    ],
+    "Combos": [
+      { "id": 9, "name": "Veg Schezwan Rice + Manchurian", "price": "150", "desc": "Half Rice served with Veg Manchurian gravy.", "image": "https://plus.unsplash.com/premium_photo-1694141251673-c74c7447599a" }
+    ]
+  }
+}
